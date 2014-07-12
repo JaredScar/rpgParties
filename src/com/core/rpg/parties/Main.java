@@ -33,7 +33,6 @@ public class Main extends JavaPlugin implements Listener {
     commandsEx cX;
     @Override
     public void onEnable() {
-        getConfig().options().copyDefaults(true);
         saveDefaultConfig();
         this.getServer().getPluginManager().registerEvents(this, this);
         cX = new commandsEx(this);
